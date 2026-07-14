@@ -72,6 +72,23 @@ h3 { font-size: var(--step-1); }
 .project-region ul { margin: 0; padding-left: 1.2rem; }
 .project-region li + li { margin-top: .6rem; }
 
+.news-index { padding-block: var(--space-lg); }
+.news-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.news-card { display: grid; grid-template-columns: 10rem 1fr; gap: var(--space-md); padding-block: var(--space-md); border-top: 1px solid #ccd2d5; }
+.news-card:last-child { border-bottom: 1px solid #ccd2d5; }
+.news-card time, .article-meta { color: var(--color-muted); font-size: var(--step--1); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.news-card h2 { margin: 0; font-size: var(--step-1); }
+.news-card a { text-decoration: none; }
+.news-card a:hover, .news-card a:focus-visible { color: var(--color-gold); }
+.article { padding-block: 11rem var(--space-lg); }
+.article-header, .article-body { width: min(calc(100% - 2rem), var(--narrow-width)); margin-inline: auto; }
+.article-header { padding-bottom: var(--space-md); border-bottom: 1px solid #ccd2d5; }
+.article-header h1 { max-width: 19ch; margin-bottom: var(--space-sm); font-size: var(--step-2); }
+.article-body { padding-top: var(--space-md); }
+.article-body h2 { margin-top: var(--space-md); font-size: var(--step-1); }
+.article-body blockquote { margin: var(--space-md) 0; padding-left: var(--space-md); border-left: 3px solid var(--color-gold); font-family: var(--font-display); font-size: var(--step-1); }
+.article-back { display: inline-block; margin-top: var(--space-md); font-weight: 700; }
+
 .intro { padding-block: var(--space-xl); }
 .intro-grid, .expertise-grid, .practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-lg); align-items: center; }
 .intro-copy { max-width: var(--narrow-width); }
@@ -112,9 +129,11 @@ h3 { font-size: var(--step-1); }
   .intro-grid, .expertise-grid, .practice-grid, .footer-grid { grid-template-columns: 1fr; }
   .client-list { grid-template-columns: repeat(3, 1fr); }
   .team-grid, .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .news-card { grid-template-columns: 1fr; gap: var(--space-xs); }
 }
 
 @media (max-width: 32rem) {
   .nav-list { gap: .35rem 1rem; }
   .client-list, .practice-list, .team-grid, .project-grid { grid-template-columns: 1fr; }
+  .news-card { grid-template-columns: 1fr; gap: var(--space-xs); }
 }
