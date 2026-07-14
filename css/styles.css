@@ -137,3 +137,21 @@ h3 { font-size: var(--step-1); }
   .client-list, .practice-list, .team-grid, .project-grid { grid-template-columns: 1fr; }
   .news-card { grid-template-columns: 1fr; gap: var(--space-xs); }
 }
+
+.contact-section { padding-block: var(--space-xl); }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(16rem, .75fr); gap: var(--space-lg); align-items: start; }
+.contact-form { display: grid; gap: 1.25rem; margin-top: var(--space-md); }
+.form-field { display: grid; gap: .4rem; }
+.form-field label { color: var(--color-navy); font-size: var(--step--1); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.form-field input, .form-field textarea { width: 100%; padding: .8rem .9rem; border: 1px solid #aeb8be; border-radius: 0; background: var(--color-white); color: var(--color-ink); font: inherit; }
+.form-field textarea { resize: vertical; }
+.form-field input:focus, .form-field textarea:focus { border-color: var(--color-gold); outline: 2px solid rgba(183, 140, 80, .25); outline-offset: 1px; }
+.contact-form .button { justify-self: start; color: var(--color-white); background: var(--color-navy); border-color: var(--color-navy); cursor: pointer; }
+.contact-form .button:hover, .contact-form .button:focus-visible { color: var(--color-navy); background: transparent; }
+.form-note { margin: -.5rem 0 0; color: var(--color-muted); font-size: var(--step--1); }
+.contact-details { padding: var(--space-md); border-top: 3px solid var(--color-gold); background: var(--color-cream); }
+.contact-details address { font-style: normal; }
+
+@media (max-width: 52rem) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
