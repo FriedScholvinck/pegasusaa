@@ -51,6 +51,27 @@ h3 { font-size: var(--step-1); }
 .hero .eyebrow { color: #e4bd82; }
 .hero p { max-width: 38rem; font-size: var(--step-1); }
 
+
+.page-hero { padding-block: 13rem var(--space-lg); background: linear-gradient(120deg, #091a27, var(--color-blue)); color: var(--color-white); }
+.page-hero h1 { margin-bottom: var(--space-sm); }
+.page-hero p:last-child { max-width: 48rem; }
+.page-intro, .projects-section { padding-block: var(--space-lg); }
+.narrow-copy { max-width: var(--narrow-width); }
+.narrow-copy p:first-child { font-family: var(--font-display); font-size: var(--step-1); line-height: 1.45; }
+.team-section { padding-block: var(--space-lg); background: var(--color-cream); }
+.team-section-advisors { padding-top: 0; }
+.team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-md); }
+.team-grid-featured { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 38rem; }
+.person-card { background: var(--color-white); }
+.person-card img { aspect-ratio: 5/6; object-fit: cover; }
+.person-card h3 { margin: 1.2rem 1.2rem .35rem; }
+.person-card p { margin: 0; padding: 0 1.2rem 1.4rem; color: var(--color-muted); font-size: var(--step--1); line-height: 1.5; }
+.projects-placeholder { margin-block: var(--space-md) var(--space-lg); aspect-ratio: 12/5; object-fit: cover; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md); }
+.project-region { padding: var(--space-md); border-top: 3px solid var(--color-gold); background: var(--color-cream); }
+.project-region ul { margin: 0; padding-left: 1.2rem; }
+.project-region li + li { margin-top: .6rem; }
+
 .intro { padding-block: var(--space-xl); }
 .intro-grid, .expertise-grid, .practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-lg); align-items: center; }
 .intro-copy { max-width: var(--narrow-width); }
@@ -90,9 +111,10 @@ h3 { font-size: var(--step-1); }
   .hero { min-height: 52rem; }
   .intro-grid, .expertise-grid, .practice-grid, .footer-grid { grid-template-columns: 1fr; }
   .client-list { grid-template-columns: repeat(3, 1fr); }
+  .team-grid, .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 32rem) {
   .nav-list { gap: .35rem 1rem; }
-  .client-list, .practice-list { grid-template-columns: repeat(2, 1fr); }
+  .client-list, .practice-list, .team-grid, .project-grid { grid-template-columns: 1fr; }
 }
