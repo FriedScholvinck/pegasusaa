@@ -5,8 +5,8 @@ Static website for Pegasus Aviation Advisors. The site is plain HTML and CSS: th
 ## Structure
 
 - `index.html` — Home page
-- `team.html` — Team page (added in a later step)
-- `projects.html` — Projects page (added in a later step)
+- `team.html` — Team page
+- `projects.html` — Projects page
 - `news-articles.html` — News & Articles page (added in a later step)
 - `contact.html` — Contact page (added in a later step)
 - `css/styles.css` — Shared design tokens and site styles
