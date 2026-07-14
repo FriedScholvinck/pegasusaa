@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">Airport terminal placeholder</title>
+  <desc id="description">An abstract illustration of an airport terminal and runway at dusk.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2335"/>
+      <stop offset=".58" stop-color="#31516a"/>
+      <stop offset="1" stop-color="#d2a96f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1260" cy="210" r="100" fill="#f4d6a5" opacity=".75"/>
+  <path d="M0 650h1600v350H0z" fill="#15212a"/>
+  <path d="M0 675h1600" stroke="#f2eadc" stroke-width="8" opacity=".7"/>
+  <path d="M675 1000 900 675h90l-75 325z" fill="#f2eadc" opacity=".16"/>
+  <path d="m340 520 290-75 340 5 280 90-15 30-300-45-270 2-305 38z" fill="#e9eef0" opacity=".85"/>
+  <path d="m690 493-50-125 42-6 115 126z" fill="#dbe4e8"/>
+  <path d="m895 503 95 96-38 9-142-99z" fill="#dbe4e8"/>
+</svg>
