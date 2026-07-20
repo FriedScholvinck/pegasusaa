@@ -55,13 +55,13 @@ The migration is deterministic and skips assets that already exist. Review `migr
 
 The contact page submits to the existing Formspree `contact` form. Server-side validation and the notification recipient are declared in `formspree.json`. The visitor email field is named `email`, so Formspree uses it as the notification Reply-To address.
 
-To deploy Formspree configuration changes, provide `FORMSPREE_DEPLOY_KEY` in the environment and run:
+To deploy Formspree configuration changes locally, provide `FORMSPREE_DEPLOY_KEY` in the environment and run:
 
 ```sh
-npx @formspree/cli deploy
+npx --yes @formspree/cli@0.9.6 deploy --skip-version-check
 ```
 
-The deploy key is a secret and must never be committed. The project ID embedded in the public form action is intentionally public. A newly added notification email must be verified from the message Formspree sends that address before delivery becomes active.
+The GitHub Pages workflow deploys `formspree.json` automatically using the `FORMSPREE_DEPLOY_KEY` repository secret. The deploy key is a secret and must never be committed. The project ID embedded in the public form action is intentionally public. A newly added notification email must be verified from the message Formspree sends that address before delivery becomes active.
 
 ## GitHub Pages
 

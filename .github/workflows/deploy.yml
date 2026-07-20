@@ -16,6 +16,19 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  formspree:
+    name: Deploy Formspree configuration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Deploy forms
+        run: npx --yes @formspree/cli@0.9.6 deploy --skip-version-check
+        env:
+          FORMSPREE_DEPLOY_KEY: ${{ secrets.FORMSPREE_DEPLOY_KEY }}
+
   build:
     runs-on: ubuntu-latest
     steps:
