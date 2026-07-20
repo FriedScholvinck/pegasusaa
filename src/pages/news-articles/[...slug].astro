@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContentBlocks from "../../components/ContentBlocks.astro";
+import PageHero from "../../components/PageHero.astro";
+import {
+  articles,
+  content,
+  excerptFor,
+  formatDate,
+  getImage,
+  textFromHtml,
+  type ContentPage,
+} from "../../lib/content";
+import { withBase } from "../../lib/paths";
+
+export function getStaticPaths() {
+  const articlePaths = articles.map((article) => ({
+    params: { slug: article.path.replace("/news-articles/", "") },
+    props: { page: article },
+  }));
+  const tagPaths = content.publicPaths
+    .filter((path) => path.startsWith("/news-articles/tag/"))
+    .map((path) => ({
+      params: { slug: path.replace("/news-articles/", "") },
+      props: { tag: decodeURIComponent(path.split("/").at(-1) ?? "") },
+    }));
+  return [...articlePaths, ...tagPaths];
+}
+
+interface Props {
+  page?: ContentPage;
+  tag?: string;
+}
+
+const { page, tag } = Astro.props;
+const image = page ? getImage(page) : undefined;
+const matchingArticles = tag
+  ? articles.filter((article) =>
+      article.blocks.some(
+        (block) =>
+          block.type === "html" &&
+          textFromHtml(block.html).toLowerCase().includes(tag.toLowerCase()),
+      ),
+    )
+  : [];
+---
+
+{
+  page ? (
+    <BaseLayout
+      title={page.title}
+      description={excerptFor(page, 220)}
+      image={image?.src}
+    >
+      <PageHero
+        eyebrow={formatDate(page.publishedAt)}
+        title={page.title}
+        image={image?.src}
+      />
+      <article class="article-detail">
+        <div class="article-meta shell">
+          <a class="text-link" href={withBase("/news-articles/")}>All articles <span>↗</span></a>
+          {page.author && <span>By {page.author}</span>}
+        </div>
+        <div class="shell">
+          <ContentBlocks blocks={page.blocks} skipFirstImage />
+        </div>
+      </article>
+    </BaseLayout>
+  ) : (
+    <BaseLayout
+      title={`${tag} articles`}
+      description={`Pegasus Aviation Advisors articles about ${tag}.`}
+    >
+      <PageHero eyebrow="Topic" title={tag ?? "Articles"} />
+      <section class="news-section section">
+        <div class="shell article-grid">
+          {matchingArticles.map((article) => {
+            const articleImage = getImage(article);
+            return (
+              <a class="article-card" href={withBase(`${article.path}/`)}>
+                <div class="article-card-image">
+                  {articleImage && <img src={withBase(articleImage.src)} alt="" />}
+                </div>
+                <time>{formatDate(article.publishedAt)}</time>
+                <h2>{article.title}</h2>
+                <p>{excerptFor(article)}</p>
+                <span>Read article ↗</span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    </BaseLayout>
+  )
+}

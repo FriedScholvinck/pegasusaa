@@ -1,0 +1,58 @@
+---
+import { content } from "../lib/content";
+import { withBase } from "../lib/paths";
+
+interface Props {
+  transparent?: boolean;
+}
+
+const { transparent = false } = Astro.props;
+const currentPath = Astro.url.pathname;
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/team/", label: "Team" },
+  { href: "/projects/", label: "Projects" },
+  { href: "/news-articles/", label: "News & Articles" },
+  { href: "/contact/", label: "Contact" },
+];
+const isActive = (href: string) => {
+  const resolved = withBase(href);
+  return href === "/"
+    ? currentPath === resolved || currentPath === withBase("/home/")
+    : currentPath.startsWith(resolved);
+};
+---
+
+<header class:list={["site-header", { "site-header--transparent": transparent }]}>
+  <div class="header-inner shell">
+    <a class="brand" href={withBase("/")} aria-label="Pegasus Aviation Advisors home">
+      <img src={withBase(content.logo)} alt="Pegasus Aviation Advisors" />
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span>Menu</span>
+      <i></i>
+      <i></i>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      {
+        links.map((link) => (
+          <a href={withBase(link.href)} aria-current={isActive(link.href) ? "page" : undefined}>
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+    <a class="header-contact" href="mailto:info@pegasusaa.com">info@pegasusaa.com</a>
+  </div>
+</header>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>(".menu-toggle");
+  const navigation = document.querySelector<HTMLElement>(".primary-nav");
+
+  button?.addEventListener("click", () => {
+    const open = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!open));
+    navigation?.classList.toggle("primary-nav--open", !open);
+  });
+</script>

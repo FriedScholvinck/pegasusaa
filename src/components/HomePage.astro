@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CallToAction from "./CallToAction.astro";
+import { findAsset, getPage } from "../lib/content";
+import { withBase } from "../lib/paths";
+
+const home = getPage("/home");
+const heroImage = findAsset("home-page-meta");
+const practiceImage = findAsset("services-aa");
+const clientNames = [
+  "Aer Lingus",
+  "Swissport",
+  "FedEx",
+  "Saudi Air Navigation Services",
+  "Amsterdam Airport Schiphol",
+  "Vancouver International Airport",
+  "Dublin Airport Authority",
+  "JetBlue",
+  "dnata",
+  "Air France",
+  "Qatar Civil Aviation Authority",
+  "Dubai Airports",
+  "Cathay Pacific",
+  "Civil Aviation Authority of Singapore",
+  "Oman Airports",
+  "Oman Airports Management Company",
+  "Stockholm Arlanda Airport",
+  "Sydney Airport",
+];
+const logos =
+  home?.blocks
+    .filter((block) => block.type === "image" && !block.src.includes("services-"))
+    .map((block, index) => ({ ...block, alt: clientNames[index] ?? "Pegasus client" })) ?? [];
+---
+
+<BaseLayout
+  title="Pegasus Aviation Advisors"
+  description="Strategic aviation advisory from senior specialists with global airport, airline, regulatory and infrastructure experience."
+  image={heroImage}
+  transparentHeader
+>
+  <section class="home-hero" style={`--hero-image: url("${heroImage ? withBase(heroImage) : ""}")`}>
+    <div class="home-hero-overlay"></div>
+    <div class="home-hero-content shell">
+      <p class="kicker kicker--light">Strategic aviation advisory</p>
+      <h1>Unmatched experience in strategic advisory services</h1>
+      <p>Independent insight and practical direction for aviation leaders around the world.</p>
+      <a class="button" href={withBase("/contact/")}>Contact us <span>↗</span></a>
+    </div>
+    <div class="hero-index">01 <span></span> Global perspective</div>
+  </section>
+
+  <section class="capability-strip" aria-label="Pegasus client sectors">
+    <div class="shell capability-grid">
+      <div><span>01</span><strong>Airports</strong></div>
+      <div><span>02</span><strong>Airlines</strong></div>
+      <div><span>03</span><strong>Air navigation</strong></div>
+      <div><span>04</span><strong>Governments & investors</strong></div>
+    </div>
+  </section>
+
+  <section class="section intro-section">
+    <div class="shell intro-grid">
+      <div>
+        <p class="kicker">About Pegasus</p>
+        <h2>A senior advisory team for decisions that shape air transport.</h2>
+      </div>
+      <div class="large-copy">
+        <p>Pegasus Aviation Advisors is a boutique advisory group providing exclusive strategic solutions to the aviation and air transport industry.</p>
+        <p>Our multi-disciplinary team combines creativity and flexibility with a strong commercial foundation. Every advisor brings at least 25 years of senior management experience.</p>
+        <a class="text-link" href={withBase("/team/")}>Meet our advisors <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section clients-section">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Selected clients</p>
+          <h2>Trusted across the aviation ecosystem.</h2>
+        </div>
+        <a class="text-link" href={withBase("/projects/")}>View projects <span>↗</span></a>
+      </div>
+      <div class="logo-grid">
+        {
+          logos.map((logo) => (
+            <div class="logo-card">
+              <img src={withBase(logo.src)} alt={logo.alt} loading="lazy" />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise-section">
+    <div class="shell expertise-grid">
+      <div class="expertise-copy">
+        <p class="kicker kicker--light">Expertise</p>
+        <h2>Thought leadership grounded in operational reality.</h2>
+        <p>Pegasus provides independent and unbiased guidance to airlines, airports, air navigation service providers, governments and financial institutions.</p>
+        <div class="experience-stat">
+          <strong>25+</strong>
+          <span>years of senior experience per advisor</span>
+        </div>
+      </div>
+      <div class="practice-panel">
+        {practiceImage && <img src={withBase(practiceImage)} alt="Pegasus areas of practice" loading="lazy" />}
+        <div class="practice-list">
+          <span>Airport development & operations</span>
+          <span>Airline strategy</span>
+          <span>Policy & regulation</span>
+          <span>Air traffic management</span>
+          <span>Public-private partnerships</span>
+          <span>Commercial & financial analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CallToAction />
+</BaseLayout>

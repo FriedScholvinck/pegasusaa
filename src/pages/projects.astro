@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CallToAction from "../components/CallToAction.astro";
+import PageHero from "../components/PageHero.astro";
+import { getImage, getPage } from "../lib/content";
+import { withBase } from "../lib/paths";
+import { projectGroups } from "../data/site";
+
+const projectsPage = getPage("/projects");
+const map = getImage(projectsPage);
+---
+
+<BaseLayout
+  title="Projects"
+  description="Selected airport and air transport projects delivered by Pegasus Aviation Advisors around the world."
+  image={map?.src}
+>
+  <PageHero
+    eyebrow="Selected work"
+    title="Global experience. Local understanding."
+    intro="Strategic, operational and commercial aviation work across Europe, the Middle East, Asia Pacific, North America and Africa."
+  />
+
+  <section class="project-map-section">
+    <div class="shell">
+      {map && <img src={withBase(map.src)} alt="Map of Pegasus Aviation Advisors project experience" />}
+    </div>
+  </section>
+
+  <section class="projects-list section">
+    <div class="shell">
+      {
+        projectGroups.map((group, groupIndex) => (
+          <div class="project-region-row">
+            <div class="region-label">
+              <span>{String(groupIndex + 1).padStart(2, "0")}</span>
+              <h2>{group.region}</h2>
+            </div>
+            <div class="region-projects">
+              {group.projects.map((project) =>
+                "path" in project ? (
+                  <a href={withBase(`${project.path}/`)}>
+                    <span>{project.title}</span>
+                    <i>↗</i>
+                  </a>
+                ) : (
+                  <div>
+                    <span>{project.title}</span>
+                  </div>
+                ),
+              )}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <CallToAction />
+</BaseLayout>

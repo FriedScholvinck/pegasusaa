@@ -1,0 +1,53 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { withBase } from "../lib/paths";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  noindex?: boolean;
+  transparentHeader?: boolean;
+}
+
+const {
+  title,
+  description = "Independent strategic guidance for the global aviation and air transport industry.",
+  image,
+  noindex = false,
+  transparentHeader = false,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const fullTitle =
+  title === "Pegasus Aviation Advisors"
+    ? title
+    : `${title} | Pegasus Aviation Advisors`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0b2b4b" />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={new URL(withBase(image), Astro.site)} />}
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <Header transparent={transparentHeader} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

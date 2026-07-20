@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { findAsset } from "../lib/content";
+
+const hero = findAsset("home-page-meta");
+---
+
+<BaseLayout
+  title="Contact"
+  description="Contact Pegasus Aviation Advisors to discuss aviation strategy, infrastructure, operations or business development."
+  image={hero}
+>
+  <PageHero
+    eyebrow="Contact"
+    title="Let’s discuss your aviation challenge."
+    intro="Tell us about your project and a senior member of the Pegasus team will get back to you."
+    image={hero}
+  />
+
+  <section class="contact-section section">
+    <div class="shell contact-grid">
+      <div class="contact-form-wrap">
+        <p class="kicker">Send an enquiry</p>
+        <h2>How can we help?</h2>
+        <form
+          class="contact-form"
+          action="https://formspree.io/p/3045871126740729212/f/contact"
+          method="post"
+          data-formspree-key="contact"
+        >
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="7" required></textarea>
+          </label>
+          <input type="hidden" name="_subject" value="New enquiry from pegasusaa.com" />
+          <button class="button" type="submit">Send message <span>↗</span></button>
+          <p class="form-note">Form submissions are processed securely by Formspree.</p>
+        </form>
+      </div>
+
+      <aside class="contact-details">
+        <p class="kicker kicker--light">Netherlands office</p>
+        <h2>Pegasus Aviation Advisors BV</h2>
+        <address>
+          Kievitlaan 74<br />
+          3882 HM Putten<br />
+          The Netherlands
+        </address>
+        <div>
+          <span>Email</span>
+          <a href="mailto:info@pegasusaa.com">info@pegasusaa.com</a>
+        </div>
+        <div>
+          <span>Telephone</span>
+          <a href="tel:+33789411459">+33 (0)7 89 41 14 59</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import { withBase } from "../lib/paths";
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  intro?: string;
+  image?: string;
+}
+
+const { eyebrow, title, intro, image } = Astro.props;
+---
+
+<section class:list={["page-hero", { "page-hero--with-image": image }]}>
+  {image && <img class="page-hero-image" src={withBase(image)} alt="" />}
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content shell">
+    <p class="kicker">{eyebrow}</p>
+    <h1>{title}</h1>
+    {intro && <p class="page-hero-intro">{intro}</p>}
+  </div>
+</section>

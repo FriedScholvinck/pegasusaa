@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CallToAction from "../components/CallToAction.astro";
+import ContentBlocks from "../components/ContentBlocks.astro";
+import PageHero from "../components/PageHero.astro";
+import { content, excerptFor, getImage, type ContentPage } from "../lib/content";
+import { personPaths, projectPaths } from "../data/site";
+import { withBase } from "../lib/paths";
+
+export function getStaticPaths() {
+  const reserved = new Set(["home", "team", "projects", "contact", "privacy-policy"]);
+  const legacy = new Set(["team-old", "team-1", "home-1", "expertise-1", "testhidden"]);
+  return content.pages
+    .filter(
+      (page) =>
+        page.public &&
+        page.status === "publish" &&
+        page.path.split("/").filter(Boolean).length === 1 &&
+        !reserved.has(page.path.slice(1)) &&
+        !legacy.has(page.path.slice(1)),
+    )
+    .map((page) => ({
+      params: { slug: page.path.slice(1) },
+      props: { page },
+    }));
+}
+
+interface Props {
+  page: ContentPage;
+}
+
+const { page } = Astro.props;
+const image = getImage(page);
+const isPerson = personPaths.has(page.path);
+const isProject = projectPaths.has(page.path);
+const description = excerptFor(page, 220);
+---
+
+<BaseLayout
+  title={page.title}
+  description={description}
+  image={image?.src}
+>
+  {
+    isPerson ? (
+      <>
+        <PageHero eyebrow="Pegasus advisor" title={page.title} />
+        <section class="profile-section">
+          <div class="profile-grid shell">
+            <div class="profile-portrait">
+              {image && <img src={withBase(image.src)} alt={page.title} />}
+            </div>
+            <ContentBlocks blocks={page.blocks} skipFirstImage />
+          </div>
+        </section>
+        <CallToAction />
+      </>
+    ) : isProject ? (
+      <>
+        <PageHero eyebrow="Selected project" title={page.title} />
+        <section class="project-detail-section">
+          <div class="shell project-detail">
+            {image && <img src={withBase(image.src)} alt={page.title} />}
+            <a class="text-link" href={withBase("/projects/")}>Back to projects <span>↗</span></a>
+          </div>
+        </section>
+        <CallToAction />
+      </>
+    ) : (
+      <>
+        <PageHero eyebrow="Pegasus Aviation Advisors" title={page.title || "Pegasus"} image={image?.src} />
+        <section class="content-section">
+          <div class="shell">
+            <ContentBlocks blocks={page.blocks} skipFirstImage={Boolean(image)} />
+          </div>
+        </section>
+      </>
+    )
+  }
+</BaseLayout>

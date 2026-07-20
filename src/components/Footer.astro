@@ -1,0 +1,36 @@
+---
+import { withBase } from "../lib/paths";
+---
+
+<footer class="site-footer">
+  <div class="footer-main shell">
+    <div class="footer-intro">
+      <p class="kicker">Pegasus Aviation Advisors</p>
+      <h2>Clear direction for complex aviation decisions.</h2>
+      <a class="text-link text-link--light" href={withBase("/contact/")}>Start a conversation <span>↗</span></a>
+    </div>
+    <div>
+      <h3>Netherlands office</h3>
+      <address>
+        Pegasus Aviation Advisors BV<br />
+        Kievitlaan 74<br />
+        3882 HM Putten<br />
+        The Netherlands
+      </address>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:+33789411459">+33 (0)7 89 41 14 59</a>
+      <a href="mailto:info@pegasusaa.com">info@pegasusaa.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom shell">
+    <p>©{new Date().getFullYear()} Pegasus Aviation Advisors BV</p>
+    <nav aria-label="Footer navigation">
+      <a href={withBase("/team/")}>Team</a>
+      <a href={withBase("/projects/")}>Projects</a>
+      <a href={withBase("/news-articles/")}>News & Articles</a>
+      <a href={withBase("/privacy-policy/")}>Privacy</a>
+    </nav>
+  </div>
+</footer>

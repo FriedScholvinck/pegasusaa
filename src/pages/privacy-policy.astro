@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContentBlocks from "../components/ContentBlocks.astro";
+import PageHero from "../components/PageHero.astro";
+import { getPage } from "../lib/content";
+
+const privacy = getPage("/privacy-policy");
+---
+
+<BaseLayout
+  title="Privacy policy"
+  description="How Pegasus Aviation Advisors handles contact information, analytics and cookies."
+>
+  <PageHero eyebrow="Legal" title="Privacy policy" />
+  <section class="content-section">
+    <div class="shell legal-content">
+      {privacy && <ContentBlocks blocks={privacy.blocks} />}
+    </div>
+  </section>
+</BaseLayout>

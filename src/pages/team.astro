@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CallToAction from "../components/CallToAction.astro";
+import PageHero from "../components/PageHero.astro";
+import { getImage, getPage } from "../lib/content";
+import { withBase } from "../lib/paths";
+import { team } from "../data/site";
+
+const teamPage = getPage("/team");
+const hero = getImage(teamPage);
+---
+
+<BaseLayout
+  title="Team"
+  description="Meet the senior aviation specialists behind Pegasus Aviation Advisors."
+  image={hero?.src}
+>
+  <PageHero
+    eyebrow="Our advisors"
+    title="Experience across every part of aviation."
+    intro="A hands-on team of senior specialists with global airport, airline, regulatory and infrastructure experience."
+    image={hero?.src}
+  />
+
+  <section class="team-intro section">
+    <div class="shell intro-grid">
+      <div>
+        <p class="kicker">About us</p>
+        <h2>Independent people. Shared standards.</h2>
+      </div>
+      <div class="large-copy">
+        <p>Pegasus is led by industry veterans with a proven track record of delivering complex aviation programmes.</p>
+        <p>Our subject matter experts each bring more than 25 years of relevant experience and work directly with clients to provide clear, practical direction.</p>
+      </div>
+    </div>
+  </section>
+
+  {
+    team.map((group, groupIndex) => (
+      <section class:list={["team-group", { "team-group--tinted": groupIndex % 2 === 1 }]}>
+        <div class="shell">
+          <div class="group-heading">
+            <p class="kicker">Team</p>
+            <h2>{group.group}</h2>
+          </div>
+          <div class="team-grid">
+            {group.members.map((member) => {
+              const profile = getPage(member.path);
+              const portrait = getImage(profile);
+              const portraitSrc = "image" in member ? member.image : portrait?.src;
+              return (
+                <a class="person-card" href={withBase(`${member.path}/`)}>
+                  <div class="person-image">
+                    {portraitSrc && <img src={withBase(portraitSrc)} alt={member.name} loading="lazy" />}
+                  </div>
+                  <div class="person-info">
+                    <span class="person-number">{String(group.members.indexOf(member) + 1).padStart(2, "0")}</span>
+                    <h3>{member.name}</h3>
+                    <p>{member.role}</p>
+                    <span class="card-arrow">↗</span>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
+  <CallToAction />
+</BaseLayout>

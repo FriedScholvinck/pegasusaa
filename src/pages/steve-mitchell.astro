@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CallToAction from "../components/CallToAction.astro";
+import PageHero from "../components/PageHero.astro";
+import { steveMitchell } from "../data/site";
+import { withBase } from "../lib/paths";
+---
+
+<BaseLayout
+  title={steveMitchell.name}
+  description={`${steveMitchell.name} is a Pegasus senior advisor specialising in ${steveMitchell.role.toLowerCase()}.`}
+  image={steveMitchell.image}
+>
+  <PageHero eyebrow="Pegasus advisor" title={steveMitchell.name} />
+  <section class="profile-section">
+    <div class="profile-grid shell">
+      <div class="profile-portrait">
+        <img src={withBase(steveMitchell.image)} alt={steveMitchell.name} />
+      </div>
+      <div class="profile-copy">
+        <p class="kicker">Senior advisor</p>
+        <h2>{steveMitchell.role}</h2>
+        {
+          steveMitchell.bio.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <CallToAction />
+</BaseLayout>

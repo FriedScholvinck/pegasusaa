@@ -1,0 +1,24 @@
+{
+  "name": "pegasusaa",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "migrate": "node scripts/migrate-squarespace.mjs",
+    "optimize": "node scripts/optimize-assets.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.3",
+    "astro": "7.1.2"
+  },
+  "devDependencies": {
+    "cheerio": "1.2.0",
+    "sharp": "0.35.3"
+  }
+}

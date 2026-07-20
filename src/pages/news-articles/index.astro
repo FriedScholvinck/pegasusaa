@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import { articles, excerptFor, formatDate, getImage } from "../../lib/content";
+import { withBase } from "../../lib/paths";
+
+const featured = articles[0];
+const featuredImage = getImage(featured);
+---
+
+<BaseLayout
+  title="News & Articles"
+  description="Analysis and updates from the senior aviation advisors at Pegasus."
+  image={featuredImage?.src}
+>
+  <PageHero
+    eyebrow="News & articles"
+    title="Independent thinking on aviation."
+    intro="Perspectives on policy, infrastructure, operations, regulation and the future of air transport."
+  />
+
+  <section class="news-section section">
+    <div class="shell">
+      {
+        featured && (
+          <a class="featured-article" href={withBase(`${featured.path}/`)}>
+            <div class="featured-image">
+              {featuredImage && <img src={withBase(featuredImage.src)} alt="" />}
+            </div>
+            <div class="featured-copy">
+              <p class="kicker">Featured article</p>
+              <time datetime={new Date(featured.publishedAt).toISOString()}>
+                {formatDate(featured.publishedAt)}
+              </time>
+              <h2>{featured.title}</h2>
+              <p>{excerptFor(featured, 260)}</p>
+              <span class="text-link">Read article <i>↗</i></span>
+            </div>
+          </a>
+        )
+      }
+
+      <div class="article-grid">
+        {
+          articles.slice(1).map((article) => {
+            const image = getImage(article);
+            return (
+              <a class="article-card" href={withBase(`${article.path}/`)}>
+                <div class="article-card-image">
+                  {image && <img src={withBase(image.src)} alt="" loading="lazy" />}
+                </div>
+                <time datetime={new Date(article.publishedAt).toISOString()}>
+                  {formatDate(article.publishedAt)}
+                </time>
+                <h2>{article.title}</h2>
+                <p>{excerptFor(article)}</p>
+                <span>Read article ↗</span>
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
