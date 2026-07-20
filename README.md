@@ -68,3 +68,7 @@ The GitHub Pages workflow deploys `formspree.json` automatically using the `FORM
 `.github/workflows/deploy.yml` builds and deploys the static site when changes are pushed to `main`. Enable GitHub Pages with GitHub Actions as the source in the repository settings.
 
 Set `SITE_URL` in the build environment only when deploying under a different public URL. The default is `https://www.pegasusaa.com`.
+
+## Image credits
+
+The homepage hero photo is by ClickerHappy via [Pexels](https://www.pexels.com/photo/silhouette-of-person-in-airport-227690/).

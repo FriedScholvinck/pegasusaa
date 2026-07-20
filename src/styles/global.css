@@ -187,7 +187,7 @@ h3 {
   width: 100%;
   height: 5rem;
   object-fit: contain;
-  object-position: left center;
+  object-position: center;
 }
 
 .site-header--transparent .brand img {
@@ -501,8 +501,8 @@ h3 {
 
 .practice-panel {
   padding: clamp(1.5rem, 3vw, 2.5rem);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: var(--navy-900);
+  border: 1px solid rgba(11, 43, 75, 0.12);
+  background: var(--warm);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
 }
 
@@ -510,7 +510,7 @@ h3 {
   width: 100%;
   aspect-ratio: 16 / 9;
   margin-bottom: 2rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .practice-list {
@@ -520,8 +520,8 @@ h3 {
 
 .practice-list span {
   padding: 1rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  color: rgba(255, 255, 255, 0.82);
+  border-top: 1px solid rgba(11, 43, 75, 0.16);
+  color: var(--navy-900);
 }
 
 .practice-list span:nth-child(odd) {
@@ -530,7 +530,7 @@ h3 {
 
 .practice-list span:nth-child(even) {
   padding-left: 1rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  border-left: 1px solid rgba(11, 43, 75, 0.16);
 }
 
 .page-hero {
