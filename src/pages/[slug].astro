@@ -9,15 +9,13 @@ import { withBase } from "../lib/paths";
 
 export function getStaticPaths() {
   const reserved = new Set(["home", "team", "projects", "contact", "privacy-policy"]);
-  const legacy = new Set(["team-old", "team-1", "home-1", "expertise-1", "testhidden"]);
   return content.pages
     .filter(
       (page) =>
         page.public &&
         page.status === "publish" &&
         page.path.split("/").filter(Boolean).length === 1 &&
-        !reserved.has(page.path.slice(1)) &&
-        !legacy.has(page.path.slice(1)),
+        !reserved.has(page.path.slice(1)),
     )
     .map((page) => ({
       params: { slug: page.path.slice(1) },
