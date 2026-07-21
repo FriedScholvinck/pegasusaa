@@ -200,12 +200,10 @@
     "/contact",
     "/dusseldorf-airport-gmbh",
     "/etihad-airways",
-    "/expertise-1",
     "/geoffrey-white",
     "/graham-bland",
     "/graham-lake",
     "/home",
-    "/home-1",
     "/j-lee-glenn",
     "/jan-jansen",
     "/jim-robinson",
@@ -254,10 +252,7 @@
     "/taif-airport-privatization",
     "/tarabot-investment-and-development",
     "/team",
-    "/team-1",
-    "/team-old",
     "/terminalsjeddahriyadh",
-    "/testhidden",
     "/vancouver-airport-operations",
     "/wayne-pearce",
     "/yann-le-page",
@@ -557,56 +552,6 @@
       "public": true
     },
     {
-      "path": "/leadership",
-      "title": "Partners",
-      "type": "page",
-      "status": "publish",
-      "publishedAt": "Mon, 02 Jan 2023 12:11:51 +0000",
-      "author": "",
-      "blocks": [
-        {
-          "type": "html",
-          "html": "<h1>Leadership Team</h1>"
-        },
-        {
-          "type": "image",
-          "alt": "Jim Robinson, Partner and Managing Director at Pegasus Aviation Advisors.",
-          "src": "/assets/migrated/2342-21b7d02a.webp"
-        },
-        {
-          "type": "html",
-          "html": "<h2>Jim Robinson</h2><p>Jim is based in France and has more than 30 years of experience in strategic planning of airport development projects. Much of Jim’s experience has been in international airport development, including strategic planning, airport master planning, investment risk analysis and mitigation, land use and environmental policy planning, and benefit-cost studies for major capital improvement programs.</p><p>Jim provides overall direction and strategy for Pegasus Aviation Advisors.  Recent assignments include serving as strategic advisor for the new Solidarity Transport Hub in Warsaw, a new greenfield 100mppa airport and multi-modal hub. </p><p>In addition, he led the master plan team as strategic advisor to Western Sydney Airport, a new greenfield second airport for Sydney Australia.  Other recent projects include advising on the hub development strategies for Air France at Charles de Gaulle Airport and Aer Lingus at Dublin Airport.   </p><p>Jim also served as aviation strategic advisor for the master plan for the New Istanbul Airport as well as developing the support facility master plan for Turkish Airlines. In addition, he has led airport development and planning assignments in KSA, Indonesia, Cambodia and Ghana.</p><p>Jim has also been visiting professor at ENAC/Tsinghua University in Beijing where he led an airport development and strategy course for the MBA program in 2018 and 2019.</p><p>Prior to establishing Pegasus Aviation Advisors, he was Head of Strategy for Dubai Airports and Manager for Airport Planning ay Abu Dhabi Airports.  In addition, he served as a partner at Leigh Fisher Associates an international airport management consulting firm. </p>"
-        },
-        {
-          "type": "html",
-          "html": "<h2>Contact Jim (France)</h2><p>Email: <a href=\"mailto:jim@pegasusaa.com\">jim@pegasusaa.com</a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "Jim Kellaway, Partner and Chairman of Pegasus Aviation Advisors.",
-          "src": "/assets/migrated/2341-5bc163d5.webp"
-        },
-        {
-          "type": "html",
-          "html": "<h2>Michael Kellaway</h2><p>Michael Kellaway is based in the UK and has over 35 years experience in the provision of senior level advice to Governments,International Funding Institutions (IFI’s), airports, airlines and aviation support companies in 35 countries. He has global experience in leading multi-disciplinary professional teams, mentoring and formulating and directing pragmatic outcomes. Michael has advised a number of Governments, airlines, airports and businesses around the world on policy, regulation, business and infrastructure development.</p><p>Serving as Pegasus Aviation Advisors’ Chairman, Michael provides thought leadership and direction, and leads strategic and business planning assignments with clients including Governments.</p>"
-        },
-        {
-          "type": "html",
-          "html": "<h2>Contact Michael (United Kingdom)</h2><p>Email: <a href=\"mailto:michael@pegasusaa.com\">michael@pegasusaa.com</a><br>Tel: +44 (0)754 3087043</p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0202-839853d7.webp"
-        },
-        {
-          "type": "html",
-          "html": "<h2>Jan Jansen</h2><p>Jan Jansen is based in France and has more than 35 years experience in the provision of senior aviation management experience including holding senior executive positions at Amsterdam Airport Schiphol and John F. Kennedy Airport in New York. He has worked with ADAC and TAV Airports and advised a number of Governments, airlines, airports and businesses around the world on privatization, operations, business and infrastructure development. Jan provides thought leadership and technological expertise and leads on strategic and business planning assignments.<br></p><p></p><h2>Contact Jan (France)</h2><p>Email: <a href=\"mailto:jan@pegasusaa.com\"><span>jan@pegasusaa.com</span></a><br>Tel: +33 6 40 90 65 04</p>"
-        }
-      ],
-      "public": false
-    },
-    {
       "path": "/expertise",
       "title": "Airport and Air Transport Strategic Consulting",
       "type": "page",
@@ -642,179 +587,6 @@
         {
           "type": "html",
           "html": "<p>or complete the form below and we will contact you soonest. </p>"
-        }
-      ],
-      "public": true
-    },
-    {
-      "path": "/team-old",
-      "title": "Team Old",
-      "type": "page",
-      "status": "publish",
-      "publishedAt": "Tue, 19 Mar 2019 19:48:49 +0000",
-      "author": "",
-      "blocks": [
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2342-7784f7f0.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/leadership/#Jim-Robinson\"><strong>Jim Robinson</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2341-a6f19ba5.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/leadership/#Michael-Kellaway\"><strong>Michael Kellaway</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2142-b682bb44.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/mark-ahasic\"><strong>Mark Ahasic</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8200-800fcecf.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/graham-bland\"><strong>Graham Bland</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/3222-b2b529ce.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/paul-bloch\"><strong>Paul Bloch</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/image-asset-b17be0da.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/paul-hooper\"><strong>Paul Hooper</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8100-109dcf0a.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/peter-hoslin\"><strong>Peter Hoslin</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8050-fe3aa5c5.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/didier-jacques\"><strong>Didier Jacques</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/6332-d94dae80.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/jan-jansen\"><strong>Jan Jansen</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0102-6a823749.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/graham-lake\"><strong>Graham Lake</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8000-5377bf13.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/yann-le-page\"><strong>Yann Le Page</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2314-e3431b6a.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/zoran-manovic\"><strong>Zoran Manovic</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0101-a2ceafaf.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/bob-mckinley\"><strong>Bob McKinley</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8110-c93395f6.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/wayne-pearce\"><strong>Wayne Pearce</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/1324-da235fc9.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/justin-powell\"><strong>Justin Powell</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0100-d1aa4829.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/johan-scholvinck\"><strong>Johan Scholvinck</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/3352-4c18bdab.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/simon-walker\"><strong>Simon Walker</strong></a></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0217-5ad02455.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/bruce-watson\"><strong>Bruce Watson</strong></a></p>"
         }
       ],
       "public": true
@@ -1315,16 +1087,6 @@
       "public": true
     },
     {
-      "path": "/testhidden",
-      "title": "testhidden",
-      "type": "page",
-      "status": "publish",
-      "publishedAt": "Mon, 18 Mar 2019 23:16:04 +0000",
-      "author": "",
-      "blocks": [],
-      "public": true
-    },
-    {
       "path": "/team",
       "title": "Team",
       "type": "page",
@@ -1424,179 +1186,6 @@
           "type": "image",
           "alt": "Roderick Wilcock Airport Ground Handling & Support Services",
           "src": "/assets/migrated/310x310_roderick-wilcock-58b151ac.webp"
-        }
-      ],
-      "public": true
-    },
-    {
-      "path": "/team-1",
-      "title": "Copy of Team",
-      "type": "page",
-      "status": "publish",
-      "publishedAt": "Sun, 07 Apr 2019 22:18:25 +0000",
-      "author": "",
-      "blocks": [
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2342-7784f7f0.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/leadership/#Jim-Robinson\"><strong>Jim Robinson</strong></a></p><p><strong>Partner - Airport Strategic Planner &amp; Technology</strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2341-a6f19ba5.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/leadership/#Michael-Kellaway\"><strong>Michael Kellaway</strong></a></p><p><strong>Partner - Strategic Planner, Policy &amp; Regulation</strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2142-b682bb44.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/mark-ahasic\"><strong>Mark Ahasic</strong></a></p><p><strong>Senior Advisor - Airport &amp; Airline Planning &amp; Operations  </strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8200-800fcecf.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/graham-bland\"><strong>Graham Bland</strong></a></p><p><strong>Senior Advisor - Airport Project Delivery  </strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/3222-b2b529ce.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/paul-bloch\"><strong>Paul Bloch</strong></a></p><p><strong>Senior Advisor - Facilitation &amp; Logistics</strong>  </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/image-asset-b17be0da.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/paul-hooper\"><strong>Paul Hooper</strong></a></p><p><strong>Senior Advisor - Aviation Economics, Competition &amp; Policy </strong> </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8100-109dcf0a.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/peter-hoslin\"><strong>Peter Hoslin</strong></a></p><p><strong>Senior Advisor - Airport Route &amp; Business Development </strong> </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8050-fe3aa5c5.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/didier-jacques\"><strong>Didier Jacques</strong></a></p><p><strong>Senior Advisor - Project Management &amp; Business Transformation</strong>  </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/6332-d94dae80.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/jan-jansen\"><strong>Jan Jansen</strong></a></p><p><strong>Senior Advisor - Airport Operations &amp; Digital Transformation  </strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0102-6a823749.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/graham-lake\"><strong>Graham Lake</strong></a></p><p><strong>Senior Advisor - Air Traffic Management &amp; Technology </strong> </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8000-5377bf13.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/yann-le-page\"><strong>Yann Le Page</strong></a></p><p><strong>Senior Advisor - Airport Planning &amp; Management  </strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/2314-e3431b6a.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/zoran-manovic\"><strong>Zoran Manovic</strong></a></p><p><strong>Senior Advisor - PPP &amp; Airport Business Finance  </strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0101-a2ceafaf.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/bob-mckinley\"><strong>Bob McKinley</strong></a></p><p><strong>Senior Advisor - Airport Operations &amp; Technology  </strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/8110-c93395f6.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/wayne-pearce\"><strong>Wayne Pearce</strong></a></p><p><strong>Senior Advisor - Airline Strategy &amp; Management </strong> </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/1324-da235fc9.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/justin-powell\"><strong>Justin Powell</strong></a></p><p><strong>Senior Advisor - Airport Business &amp; Market Analysis </strong> </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0100-d1aa4829.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/johan-scholvinck\"><strong>Johan Scholvinck</strong></a></p><p><strong>Senior Advisor - Airport Commercial Development  </strong></p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/3352-4c18bdab.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/simon-walker\"><strong>Simon Walker</strong></a></p><p><strong>Senior Advisor - Airport Regulation &amp; Personnel Training</strong>  </p>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/0217-5ad02455.webp"
-        },
-        {
-          "type": "html",
-          "html": "<p><a href=\"/bruce-watson\"><strong>Bruce Watson</strong></a></p><p><strong>Senior Advisor - Airport &amp; Airline Ground Handling </strong> </p>"
         }
       ],
       "public": true
@@ -1930,179 +1519,6 @@
       "public": true
     },
     {
-      "path": "/home-1",
-      "title": "(Copy)",
-      "type": "page",
-      "status": "publish",
-      "publishedAt": "Fri, 25 Feb 2022 21:05:54 +0000",
-      "author": "",
-      "blocks": [
-        {
-          "type": "html",
-          "html": "<h1><strong>Unmatched experience in strategic advisory services</strong></h1><h2>Pegasus Aviation Advisors is a boutique advisory group providing exclusive strategic solutions to the aviation and air transport industry. We offer a select team of senior individuals that have worked in aviation business development and infrastructure across the globe.</h2><h2>Our team has a reputation for creativity and flexibility in conjunction with a strong commercial foundation. Each member of our multi-disciplinary team has a minimum of 25 years senior management experience in the air transport sector.</h2><h2>Our services are tailored to innovative and practical solutions that meet our clients’ goals.</h2>"
-        },
-        {
-          "type": "html",
-          "html": "<h1>Clients we work with</h1>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/pngwing-com-6-0c1ed37a.png"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/1920px-swissport_logo-1bf9ad93.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/fedex_logo-31c30ce1.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/sans_logo-c10346d1.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/schiphol_amsairport_logo-3782e145.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/yvr_logo-60e26ce9.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/dublin-airport-authority-daa-logo-d8ec6ccd.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/jetblue-logo-3542881a.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/dnata-logo-d3c96f33.png"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/airfrance-logo-d1983618.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/qatarciviaa-logo-3a72f204.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/db_logo-ee372f8b.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/cathaypacific-logo-73ad071d.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/caas-logo-5db0f7e9.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/pngwing-com-6-d31bc8c6.png"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/1920px-swissport_logo-ae7fd756.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/fedex_logo-6ba9c6b2.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/sans_logo-def50f83.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/schiphol_amsairport_logo-a8772158.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/yvr_logo-b151d963.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/dublin-airport-authority-daa-logo-9f26e405.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/jetblue-logo-13b5690c.png"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/dnata-logo-a53dcb0f.png"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/airfrance-logo-031e9538.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/qatarciviaa-logo-15f7ecbc.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/db_logo-a60d755d.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/cathaypacific-logo-d578ac63.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/wax7jk9l_400x400-998b7e60.webp"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/5000-36629011.webp"
-        },
-        {
-          "type": "html",
-          "html": "<h1>Services and Areas of Focus</h1>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/services_focus-e071fb75.png"
-        }
-      ],
-      "public": true
-    },
-    {
       "path": "/projects",
       "title": "Projects",
       "type": "page",
@@ -2210,93 +1626,6 @@
         {
           "type": "html",
           "html": "<h3>AFRICA</h3><h2><a href=\"/master-plan-kotoka-int-airport\">Terminal Planning for Kotoka International Airport - Accra, Ghana</a></h2>"
-        }
-      ],
-      "public": true
-    },
-    {
-      "path": "/expertise-1",
-      "title": "Airport and Air Transport Strategic Consulting (Copy)",
-      "type": "page",
-      "status": "publish",
-      "publishedAt": "Mon, 14 Mar 2022 21:07:33 +0000",
-      "author": "",
-      "blocks": [
-        {
-          "type": "html",
-          "html": "<p>Pegasus Aviation Advisors offers thought leadership and subject matter expertise at a strategic level to assist clients in effective decision-making. We take pride in our ability to provide independent and unbiased guidance of the highest quality to our aviation clients, including airlines, airports, ANSP’s and financial institutions.</p><p></p><h3><strong>AREAS OF PRACTICE</strong></h3><p></p>"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Air traffic <br>management </strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/air-traffic-management_200x200-4e9d01aa.png"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Airport Strategy <br>Development</strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/airport-strategy-development_200x200-de53af65.png"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Operational <br>Transformation</strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/operational-transformation_200x200-f3e9d1fc.png"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Airport Digital <br>Transformation</strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/airport-digital-transformation_200x200-3cc9bb4f.png"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Airport <br>Privatization</strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/airport-privatization_200x200-9907bddf.png"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Policy and <br>Regulation</strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/policy-and-regulations_200x200-fc1351fd.png"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Organizational <br>Development</strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/organizational-development_200x200-5e93c236.png"
-        },
-        {
-          "type": "html",
-          "html": "<h2><strong>Business <br>Transformation</strong></h2>"
-        },
-        {
-          "type": "image",
-          "alt": "",
-          "src": "/assets/migrated/business-transformation_200x200-ceaa1d5c.png"
         }
       ],
       "public": true
@@ -2447,7 +1776,7 @@
         },
         {
           "type": "html",
-          "html": "<h3>Jim Robinson</h3><p>Jim is based in France and has more than 30 years of experience in strategic planning of airport development projects. Much of Jim’s experience has been in international airport development, including strategic planning, airport master planning, investment risk analysis and mitigation, land use and environmental policy planning, and benefit-cost studies for major capital improvement programs.</p><p>Jim provides overall direction and strategy for Pegasus Aviation Advisors.  Recent assignments include serving as strategic advisor for the new Solidarity Transport Hub in Warsaw, a new greenfield 100mppa airport and multi-modal hub. </p><p>In addition, he led the master plan team as strategic advisor to Western Sydney Airport, a new greenfield second airport for Sydney Australia.  Other recent projects include advising on the hub development strategies for Air France at Charles de Gaulle Airport and Aer Lingus at Dublin Airport.   </p><p>Jim also served as aviation strategic advisor for the master plan for the New Istanbul Airport as well as developing the support facility master plan for Turkish Airlines. In addition, he has led airport development and planning assignments in KSA, Indonesia, Cambodia and Ghana.</p><p>Jim has also been visiting professor at ENAC/Tsinghua University in Beijing where he led an airport development and strategy course for the MBA program in 2018 and 2019.</p><p>Prior to establishing Pegasus Aviation Advisors, he was Head of Strategy for Dubai Airports and Manager for Airport Planning ay Abu Dhabi Airports.  In addition, he served as a partner at Leigh Fisher Associates an international airport management consulting firm. </p><h2>Contact Jim (France)</h2><p>Email: <a href=\"mailto:jim@pegasusaa.com\">jim@pegasusaa.com</a><br>Tel: +33 (0)7 89 41 14 59</p>"
+          "html": "<h3>Jim Robinson</h3><p>Jim is based in France and has more than 30 years of experience in strategic planning of airport development projects. Much of Jim’s experience has been in international airport development, including strategic planning, airport master planning, investment risk analysis and mitigation, land use and environmental policy planning, and benefit-cost studies for major capital improvement programs.</p><p>Jim provides overall direction and strategy for Pegasus Aviation Advisors.  Recent assignments include serving as strategic advisor for the new Solidarity Transport Hub in Warsaw, a new greenfield 100mppa airport and multi-modal hub. </p><p>In addition, he led the master plan team as strategic advisor to Western Sydney Airport, a new greenfield second airport for Sydney Australia.  Other recent projects include advising on the hub development strategies for Air France at Charles de Gaulle Airport and Aer Lingus at Dublin Airport.   </p><p>Jim also served as aviation strategic advisor for the master plan for the New Istanbul Airport as well as developing the support facility master plan for Turkish Airlines. In addition, he has led airport development and planning assignments in KSA, Indonesia, Cambodia and Ghana.</p><p>Jim has also been visiting professor at ENAC/Tsinghua University in Beijing where he led an airport development and strategy course for the MBA program in 2018 and 2019.</p><p>Prior to establishing Pegasus Aviation Advisors, he was Head of Strategy for Dubai Airports and Manager for Airport Planning ay Abu Dhabi Airports.  In addition, he served as a partner at Leigh Fisher Associates an international airport management consulting firm. </p><h2>Contact Jim (France)</h2><p>Email: <a href=\"mailto:jim@pegasusaa.com\">jim@pegasusaa.com</a></p>"
         }
       ],
       "public": true
@@ -2482,7 +1811,7 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<p>Pegasus Aviation Advisors, established in 2013, has just celebrated its fifth anniversary of providing high-level strategic advice on aviation development matters across the globe. Chairman <a href=\"/leadership/#Michael-Kellaway\">Michael Kellaway</a> says, “This provides us both with an opportunity to reflect and prepare for the future.” Accordingly, a new website has been developed that more accurately reflects the capabilities, track record and professional offering of the company on a tailored url <a href=\"/\">pegasusaa.com</a>.</p><p>Managing Director, <a href=\"/leadership/#Jim-Robinson\">Jim Robinson</a> says, “Since 2013 we have seen an increasing demand for our valued services. Our philosophy is to offer Senior Advisors, all who have a minimum of 25 years relevant experience, that have proven to be attractive to a range of clients that appreciate our ability to guide and add real value to what are often very challenging agendas. Most of our assignments require us to draw upon our team expertise gained across the globe over the past three decades. A considerable part of our work would fall into the “due diligence” category where C-level executives require independent professional support from advisors that have “been there and done it”. We have proven time and time again that we can save our clients’ expenditure where our pragmatism offers the simple solution rather than chasing the major complex project.”</p><p>Our work has a number of diverse challenges from collaborating with <a href=\"https://www.paconsulting.com/\">PA Consulting</a> on the development of the Aer Lingus Gateway project at Dublin International Airport, undertaking a high-level operations review for <a href=\"/saudi-air-cargo-company\">Saudi Air Cargo Company</a> to teaming with <a href=\"https://www.ey.com/en_gl\">EY</a> on a review of the Economic Regulations for the Civil Aviation Authority, Qatar.  </p><p>Jim Robinson says, “In 2014 I took a leading role in the Future of Air Transport think tank that examined the airport digital transformation challenge. What emerged was the visionary proposal to digitize the whole passenger experience. I’m pleased to say that we have made excellent progress in establishing our expertise in the field where we have been able, in conjunction with technical partners, to formulate an implementation road-map that is attractive to clients. Many airports want to participate in the digital transformation but need professional assistance to make the journey. We have established <strong>NexTerm Ltd</strong> to advance that agenda and I plan to make further announcements on the subject as we progress with our clients. We have a vision that we are happy to share and add both technical and operational value to our client teams.”</p><p>Pegasus Aviation Advisors are positioned to deal with both legacy and future challenges that occur within the sector and prides itself on corporate integrity and professionalism.</p><p><em>Contact details: </em><a href=\"mailto:info@pegasusaa.com\"><em>info@pegasusaa.com</em></a><em> Tel: +33 (0) 7 8941 1459</em></p>"
+          "html": "<p>Pegasus Aviation Advisors, established in 2013, has just celebrated its fifth anniversary of providing high-level strategic advice on aviation development matters across the globe. Chairman <a href=\"/micheal-kellaway/\">Michael Kellaway</a> says, “This provides us both with an opportunity to reflect and prepare for the future.” Accordingly, a new website has been developed that more accurately reflects the capabilities, track record and professional offering of the company on a tailored url <a href=\"/\">pegasusaa.com</a>.</p><p>Managing Director, <a href=\"/jim-robinson/\">Jim Robinson</a> says, “Since 2013 we have seen an increasing demand for our valued services. Our philosophy is to offer Senior Advisors, all who have a minimum of 25 years relevant experience, that have proven to be attractive to a range of clients that appreciate our ability to guide and add real value to what are often very challenging agendas. Most of our assignments require us to draw upon our team expertise gained across the globe over the past three decades. A considerable part of our work would fall into the “due diligence” category where C-level executives require independent professional support from advisors that have “been there and done it”. We have proven time and time again that we can save our clients’ expenditure where our pragmatism offers the simple solution rather than chasing the major complex project.”</p><p>Our work has a number of diverse challenges from collaborating with <a href=\"https://www.paconsulting.com/\">PA Consulting</a> on the development of the Aer Lingus Gateway project at Dublin International Airport, undertaking a high-level operations review for <a href=\"/saudi-air-cargo-company\">Saudi Air Cargo Company</a> to teaming with <a href=\"https://www.ey.com/en_gl\">EY</a> on a review of the Economic Regulations for the Civil Aviation Authority, Qatar.  </p><p>Jim Robinson says, “In 2014 I took a leading role in the Future of Air Transport think tank that examined the airport digital transformation challenge. What emerged was the visionary proposal to digitize the whole passenger experience. I’m pleased to say that we have made excellent progress in establishing our expertise in the field where we have been able, in conjunction with technical partners, to formulate an implementation road-map that is attractive to clients. Many airports want to participate in the digital transformation but need professional assistance to make the journey. We have established <strong>NexTerm Ltd</strong> to advance that agenda and I plan to make further announcements on the subject as we progress with our clients. We have a vision that we are happy to share and add both technical and operational value to our client teams.”</p><p>Pegasus Aviation Advisors are positioned to deal with both legacy and future challenges that occur within the sector and prides itself on corporate integrity and professionalism.</p><p><em>Contact details: </em><a href=\"mailto:info@pegasusaa.com\"><em>info@pegasusaa.com</em></a><em> </em></p>"
         }
       ],
       "public": false
