@@ -579,7 +579,7 @@
         },
         {
           "type": "html",
-          "html": "<h2>Contact Jim (France)</h2><p>Email: <a href=\"mailto:jim@pegasusaa.com\">jim@pegasusaa.com</a><br>Tel: +33 (0)7 89 41 14 59</p>"
+          "html": "<h2>Contact Jim (France)</h2><p>Email: <a href=\"mailto:jim@pegasusaa.com\">jim@pegasusaa.com</a></p>"
         },
         {
           "type": "image",
