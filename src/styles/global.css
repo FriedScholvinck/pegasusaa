@@ -1038,6 +1038,11 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.project-detail .content-blocks {
+  max-width: 48rem;
+  margin: 0;
+}
+
 .project-detail .text-link {
   justify-self: start;
 }
@@ -1100,6 +1105,16 @@ h3 {
 
 .prose p {
   margin-bottom: 1.35rem;
+}
+
+.prose ol,
+.prose ul {
+  margin: 0 0 1.35rem 1.35rem;
+  padding: 0;
+}
+
+.prose li {
+  margin-bottom: 0.65rem;
 }
 
 .prose a {

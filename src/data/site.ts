@@ -87,6 +87,7 @@ export const projectGroups = [
   {
     region: "Europe",
     projects: [
+      { title: "Safety Management Systems", path: "/safety-management-systems" },
       { title: "Dusseldorf Airport GMBH – Airport Restructuring", path: "/dusseldorf-airport-gmbh" },
       { title: "Terminal Planning Study for Dublin International Airport", path: "/master-plan-dublin-int-airport" },
       { title: "Master Plan for New Istanbul International Airport", path: "/master-plan-new-istanbul-airport" },
@@ -101,6 +102,10 @@ export const projectGroups = [
   {
     region: "Middle East",
     projects: [
+      {
+        title: "King Salman International Airport, Riyadh",
+        path: "/king-salman-international-airport",
+      },
       { title: "Certification Private Terminals in Jeddah & Riyadh", path: "/terminalsjeddahriyadh" },
       { title: "Master Plan for Abu Dhabi International Airport", path: "/master-plan-abudhabiintairport" },
       { title: "Master Plan for Dubai World Central", path: "/master-plan-dubai-world-central" },

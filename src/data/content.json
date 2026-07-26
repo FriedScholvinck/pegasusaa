@@ -211,6 +211,7 @@
     "/john-carr",
     "/john-korver",
     "/justin-powell",
+    "/king-salman-international-airport",
     "/leading-western-european-airline",
     "/linda-nicol",
     "/luca-ciarlini",
@@ -234,6 +235,7 @@
     "/news-articles/2023/1/13/what-should-the-expectations-from-single-european-sky-really-be",
     "/news-articles/2023/2/9/announcement-expansion-of-pegasus-aviation-advisors",
     "/news-articles/2023/5/8/how-can-we-know-when-options-are-exhausted-amid-the-noise-over-schiphol",
+    "/news-articles/2026/7/26/forecasting",
     "/news-articles/tag/Noise",
     "/news-articles/tag/Schiphol",
     "/pariscdgt4evaluation",
@@ -244,6 +246,7 @@
     "/roderickwilcock",
     "/rwaa-certification",
     "/sacc-terminal-orat",
+    "/safety-management-systems",
     "/sans-organisation-structure-review",
     "/saudi-air-cargo-company",
     "/shannon-group-strategic-review",
@@ -552,6 +555,26 @@
       "public": true
     },
     {
+      "path": "/news-articles/2026/7/26/forecasting",
+      "title": "Forecasting",
+      "type": "post",
+      "status": "publish",
+      "publishedAt": "Sun, 26 Jul 2026 14:00:00 +0000",
+      "author": "",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "",
+          "src": "/assets/migrated/airport3-4283ae62.webp"
+        },
+        {
+          "type": "html",
+          "html": "<p>Credible forecasting lies at the heart of any significant capital programme. In particular, this must take account of the specific features of an airport or airline. Supported by generic forecasts provided by industry bodies, Pegasus Aviation Advisors analyses the future passenger and cargo numbers as critical drivers for revenue forecasts and CAPEX decisions.</p><p>A forecasting exercise will generally include at least the following:</p><ol type=\"i\"><li>Base line data – segmented into key groups such as Leisure Visitors, Visiting Friends &amp; Relatives (VFR), Residents, Government, Business, Other – assessed over a minimum agreed period, taking account of demand shocks that may bias results</li><li>Growth forecasts for each segment based on a propensity to travel analysis</li><li>Seasonality analysis by segment</li><li>Competitor airport data – passenger numbers, growth characteristics, and other factors</li><li>Comparator airport analysis to support the output figures</li><li>Sensitivity analyses on all key variables, to produce “High” and “Low” forecasts against defined assumptions</li></ol><p>These forecasts may well be aligned to a Tourism Strategy or to support route development efforts by the airport.</p>"
+        }
+      ],
+      "public": true
+    },
+    {
       "path": "/expertise",
       "title": "Airport and Air Transport Strategic Consulting",
       "type": "page",
@@ -687,6 +710,46 @@
         {
           "type": "html",
           "html": "<p><strong>Challenge:</strong><br>Pegasus Aviation Advisors were asked by the CIO of Tarabot to provide a range of strategic airport planning services associated with the PPP of two regional airports in Saudi Arabia.</p><p><strong>Solution:</strong><br>Pegasus Aviation Advisors undertook a comprehensive review of plans and in close consultation with the client it:</p><ul><li><p>Reviewed the traffic forecasts, status of current facilities and GACA Minimum Technical Requirements (MTR)</p></li><li><p>Reviewed proposed physical development plans and draft Master Plans</p></li><li><p>Proposed enhancements to current facilities to improve service levels.</p></li><li><p>Developed enhancements to the plans to improve investment profile</p></li><li><p>Provided due diligence on the PPP proposals</p></li><li><p>Support the PPP consortium through the bid process</p></li></ul><p><strong>Results:</strong><br>Tarabot received “value-added” advice on a wide range of topics to enhance its bid.  </p>"
+        }
+      ],
+      "public": true
+    },
+    {
+      "path": "/king-salman-international-airport",
+      "title": "King Salman International Airport, Riyadh",
+      "type": "page",
+      "status": "publish",
+      "publishedAt": "Sun, 26 Jul 2026 12:00:00 +0000",
+      "author": "",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Aerial overview of a major Middle East airport campus at night.",
+          "src": "/assets/migrated/otm_middle_east_661_103_aerial_overview_night-a332d1d1.webp"
+        },
+        {
+          "type": "html",
+          "html": "<p>The future of Saudi Arabia’s aviation is taking shape in Riyadh at King Salman International Airport. Expected to begin operations by 2030, the airport covers approximately 57 sq. kms. and features six parallel runways. The airport is a strategic investment in connectivity, tourism, logistics, and economic diversification, positioning Riyadh as a leading global aviation hub ahead of Expo 2030 and beyond.</p><p>Our most experienced Subject Matter Experts (SME) are supporting Alix Partners who are providing ‘leading edge’ advice and support to the airport’s investment and commercial management team. Tasks to date have included advice on organisation &amp; management, master planning review, private sector participation (PSP), investment strategy and organisational performance and efficiency. Future work includes real estate categorisation, commercial development planning and identification of PSP partners.</p><p>This assignment draws upon over 25 years of experience gained while working at the world’s leading capital international airports in Europe, Middle East and Asia.</p>"
+        }
+      ],
+      "public": true
+    },
+    {
+      "path": "/safety-management-systems",
+      "title": "Safety Management Systems",
+      "type": "page",
+      "status": "publish",
+      "publishedAt": "Sun, 26 Jul 2026 13:00:00 +0000",
+      "author": "",
+      "blocks": [
+        {
+          "type": "image",
+          "alt": "Aircraft on the apron at a major airport.",
+          "src": "/assets/migrated/plane-in-field-1a9d3880.webp"
+        },
+        {
+          "type": "html",
+          "html": "<p>The European Union Aviation Safety Agency (EASA) has mandated compliance with Safety Management System (SMS) principles for a number of segments of the air transport industry. These are implemented by the National Supervising Agencies in each Member State.</p><p>Working with KPMG staff over a multi-month period, Pegasus subject matter experts provided an audit function for the Maintenance, Repair and Overhaul (MRO) sector in a major European country. This involved reviewing SMS manuals for compliance with EASA regulations, identifying gaps in that documentation and advising the Inspectors on deficiencies that should be raised during oversight meetings.</p>"
         }
       ],
       "public": true
@@ -1537,7 +1600,15 @@
         },
         {
           "type": "html",
+          "html": "<h2><a href=\"/safety-management-systems\">Safety Management Systems</a></h2>"
+        },
+        {
+          "type": "html",
           "html": "<h3>MIDDLE EAST</h3>"
+        },
+        {
+          "type": "html",
+          "html": "<h2><a href=\"/king-salman-international-airport\">King Salman International Airport, Riyadh</a></h2>"
         },
         {
           "type": "html",

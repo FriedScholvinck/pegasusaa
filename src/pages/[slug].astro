@@ -59,6 +59,7 @@ const description = excerptFor(page, 220);
         <section class="project-detail-section">
           <div class="shell project-detail">
             {image && <img src={withBase(image.src)} alt={page.title} />}
+            <ContentBlocks blocks={page.blocks} skipFirstImage={Boolean(image)} />
             <a class="text-link" href={withBase("/projects/")}>Back to projects <span>↗</span></a>
           </div>
         </section>
